@@ -1,0 +1,25 @@
+(version 1.0)
+(rule INNER_SPACING (constraint clearance (min 0.127mm)) (layer "In1.Cu"))
+(rule INNER_SPACING (constraint clearance (min 0.127mm)) (layer "In2.Cu")) 
+(rule INNER_THICKNESS (constraint track_width (min 0.127mm)) (layer "In1.Cu"))
+(rule INNER_THICKNESS (constraint track_width (min 0.127mm)) (layer "In2.Cu"))
+(rule "Distance between Vias of Different Nets"  
+    (constraint hole_to_hole (min 0.5mm))
+    (condition "A.Type =='Via' && B.Type =='Via' && A.Net != B.Net"))
+(rule "Pad Clearance"  
+    (constraint clearance (min 0.15mm))
+    (condition "A.Type =='Pad' || B.Type =='Pad'"))
+(rule "Via Clearance"  
+    (constraint clearance (min 0.15mm))
+    (condition "A.Type =='Via' || B.Type =='Via'"))
+(rule "NPTH clearance"  
+    (constraint hole_clearance (min 0.225mm))
+    (condition "A.Pad_Type == 'NPTH, mechanical'"))
+(rule "NPTH IN1 clearance"  
+    (constraint hole_clearance (min 0.5mm))
+	(layer "In1.Cu")
+    (condition "A.Pad_Type == 'NPTH, mechanical'"))
+(rule "NPTH IN2 clearance"  
+    (constraint hole_clearance (min 0.5mm))
+	(layer "In2.Cu")
+    (condition "A.Pad_Type == 'NPTH, mechanical'"))
