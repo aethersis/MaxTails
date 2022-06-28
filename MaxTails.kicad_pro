@@ -551,6 +551,18 @@
     [
       "a8710013-2b8a-4f8e-9a99-5a3ce262358b",
       "MCU"
+    ],
+    [
+      "058f5227-fd1c-4c26-8989-32dbb48621b7",
+      "IO"
+    ],
+    [
+      "9eda2272-717c-47ec-bcb5-c2a3c40f826f",
+      "USB PD"
+    ],
+    [
+      "ce483448-a552-41df-a69c-bd3d9f4cddd3",
+      "Power"
     ]
   ],
   "text_variables": {}

@@ -1,3 +1,3 @@
 (fp_lib_table
-  (lib (name "max_tails_library")(type "KiCad")(uri "${KIPRJMOD}/max_tails_library/max_tails_library.pretty")(options "")(descr ""))
+  (lib (name "MaxTailsLibrary")(type "KiCad")(uri "${KIPRJMOD}/MaxTailsLibrary/MaxTailsLibrary.pretty")(options "")(descr ""))
 )
